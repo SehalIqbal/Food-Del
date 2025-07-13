@@ -1,0 +1,145 @@
+.stock-management {
+    margin-left: max(5vw,25px);
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafc;
+    min-height: 100vh;
+  }
+  
+  .stock-management h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .stock-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stock-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .stock-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+  
+  .stock-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .stock-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .stock-category,
+  .stock-price {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .stock-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .input-group input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  
+  .status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    min-width: 90px;
+  }
+  
+  .status-green {
+    background-color: #e6f4ea;
+    color: #2e7d32;
+  }
+  
+  .status-orange {
+    background-color: #fff3e0;
+    color: #ef6c00;
+  }
+  
+  .status-red {
+    background-color: #fdecea;
+    color: #c62828;
+  }
+  
+  .save-btn {
+    padding: 10px 18px;
+    background-color: #007BFF; /* Fresh, modern green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease;  /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.save-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-3px);  /* Slight lift effect */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);  /* Enhance shadow */
+}
+
+.save-btn:focus {
+    outline: none;
+    border: 2px solid #4CAF50;  /* Green border when focused */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);  /* Glow effect */
+}
+
+  
+  .stock-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 12px;
+  }
+  
+  .stock-item-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-item-wrapper .title {
+    font-weight: 500;
+    color: #222;
+  }
+  
+  .stock-item-wrapper .actions {
+    display: flex;
+    gap: 10px;
+  }
+  

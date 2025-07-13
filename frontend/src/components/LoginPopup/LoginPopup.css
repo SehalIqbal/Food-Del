@@ -1,0 +1,110 @@
+.login-popup {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-popup-container {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #4b5563;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login-popup-title img {
+    width: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.login-popup-title img:hover {
+    opacity: 1;
+}
+
+.login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-inputs input {
+    outline: none;
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111827;
+    background-color: #f9fafb;
+}
+
+.login-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: #3a5a40;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-popup-container button:hover {
+    background-color: #2f4f35;
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -10px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.login-popup-condition input {
+    margin-top: 5px;
+}
+
+.login-popup p span {
+    color: #3a5a40;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.login-popup p span:hover {
+    color: #2f4f35;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

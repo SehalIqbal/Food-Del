@@ -1,0 +1,33 @@
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: var(--gap-base);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 30px 0;
+    font-size: var(--font-size-small);
+    background-color: var(--card-bg-color);
+  }
+  
+  .order-item-food, .order-item-name {
+    font-weight: 600;
+  }
+  
+  .order-item-name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .order-item-address {
+    margin-bottom: 10px;
+  }
+  
+  .order-item select {
+    background-color: #ffe8e4;
+    border: 1px solid var(--border-color);
+    width: max(10vw, 120px);
+    padding: var(--padding-base);
+    outline: none;
+  }
+  

@@ -1,0 +1,136 @@
+/* General Styling */
+.bg-white {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  .table-container {
+    padding: 1rem;
+    margin: 0 2rem;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b5563; /* Dark gray */
+    margin-bottom: 1rem;
+    text-align: center; /* Ensure headings are centered */
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f3f4f6; /* Light gray */
+  }
+  
+  thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #4b5563; /* Dark gray */
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #e5e7eb; /* Light gray border for rows */
+  }
+  
+  tbody td {
+    padding: 12px;
+    font-size: 1rem;
+    color: #374151; /* Darker gray */
+  }
+  
+  /* Highlighting for hover */
+  tbody tr:hover {
+    background-color: #f9fafb; /* Lighter gray on hover */
+  }
+  
+  td.font-semibold {
+    font-weight: bold;
+    color: #4b5563;
+  }
+  
+  td.font-semibold.text-indigo-600 {
+    color: #6366f1; /* Indigo for rank */
+  }
+  
+  /* Tabs Styling */
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; /* Optional: Add space between buttons and content */
+  }
+  
+  .tab {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e9ecef; /* Light gray for default */
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+  
+  .tab:hover {
+    background-color: #d6d8db;
+  }
+  
+  .tab.active {
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    color: #fff;
+  }
+  
+  /* Specific Item-Wise Sales Styling */
+  .item-wise-sales {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add margin-top to create spacing above the Top-Selling Items heading */
+  .item-wise-sales h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b5563; /* Dark gray */
+    margin-top: 40px; /* Add this margin-top to space out the heading */
+    margin-bottom: 1rem;
+    text-align: center; /* Ensure heading is centered */
+  }
+  
+  .item-wise-sales p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Specific Total Overview Styling */
+  .total-overview {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Same styling for Total Overview heading */
+  .total-overview h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b5563; /* Dark gray */
+    margin-bottom: 1rem;
+    text-align: center; /* Ensure heading is centered */
+  }
+  

@@ -1,0 +1,72 @@
+/* General Styles for Admin Reports */
+.admin-report {
+  padding: 20px;
+  margin: 20px;
+}
+
+.admin-report h1 {
+  margin-bottom: 30px; /* Add space below the heading */
+}
+
+/* Tab Styling */
+.tab {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e9ecef; /* Light gray for default */
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.tab:hover {
+  background-color: #d6d8db;
+}
+
+.tab.active {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  color: #fff;
+}
+
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f3f4f6; /* Light gray */
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+  color: #4b5563; /* Dark gray */
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb; /* Light gray border for rows */
+}
+
+tbody td {
+  padding: 12px;
+  font-size: 1rem;
+  color: #374151; /* Darker gray */
+}
+
+/* Highlighting for hover */
+tbody tr:hover {
+  background-color: #f9fafb; /* Lighter gray on hover */
+}
+
+td.font-semibold {
+  font-weight: bold;
+  color: #4b5563;
+}
+
+td.font-semibold.text-indigo-600 {
+  color: #6366f1; /* Indigo for rank */
+}

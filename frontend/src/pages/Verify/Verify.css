@@ -1,0 +1,22 @@
+.verify {
+    min-height: 60vh;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+}
+
+.verify .spinner {
+    width: 80px;
+    height: 80px;
+    place-self: center;
+    border: 5px solid #d1d5db; /* light gray */
+    border-top-color: #3a5a40;  /* green accent */
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,73 @@
+/* src/pages/PromoCodes/PromoCodeAdmin.css */
+.promo-code-admin {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-left: max(5vw,25px);
+  }
+  
+  .promo-code-admin h2 {
+    color: #333;
+  }
+  
+  .promo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .promo-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .promo-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    background-color: #f7f7f7;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .promo-list button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

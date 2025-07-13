@@ -1,0 +1,144 @@
+/* Base styles */
+:root {
+    --primary-color: #007BFF;   /* Blue for buttons and highlights */
+    --secondary-color: #45a049; /* Green for success actions */
+    --danger-color: tomato;     /* Red for errors or deletes */
+    --background-color: #f9f9f9; /* Light gray background */
+    --card-bg-color: #fff;      /* White background for cards */
+    --border-radius: 8px;       /* Rounded corners for most elements */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+    --font-size-base: 16px;      /* Base font size */
+    --font-size-small: 14px;     /* Small font size */
+    --padding-base: 10px;        /* Base padding */
+    --gap-base: 15px;            /* Base gap between elements */
+    --border-color: #ccc;       /* Default border color */
+  }
+  
+   
+  /* Buttons (for all pages) */
+  button {
+    padding: var(--padding-base) 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Card and Container Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-base);
+  }
+  
+  .card {
+    background: var(--card-bg-color);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Flexbox Layouts for Responsive Design */
+  .flex-row {
+    display: flex;
+    gap: var(--gap-base);
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-base);
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: grid;
+    gap: var(--gap-base);
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 13px;
+    }
+  }
+  .add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6D6D6D;
+    font-size: var(--font-size-base);
+  }
+  
+  .add form {
+    gap: var(--gap-base);
+  }
+  /* Add a little left padding to the textarea */
+
+  .add-product-description textarea {
+    padding: 10px 10px;
+    padding-left: 8px; /* Adds space on the left */
+}
+
+  
+  .add-img-upload img {
+    width: 120px;
+  }
+  
+  .add-product-name,
+  .add-product-description {
+    width: max(40%, 280px);
+  }
+  
+  .add-category-price {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .add-category-price select,
+  .add-category-price input {
+    max-width: 120px;
+    padding: var(--padding-base);
+  }
+  
+  .add-btn {
+    max-width: 120px;
+    border: none;
+    padding: var(--padding-base);
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  

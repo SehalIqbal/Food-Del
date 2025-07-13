@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 80%;
+  margin: auto;
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1050px) {
+  .app {
+    width: 90%;
+  }
+}
+
+/* 🌿 Updated green-themed Chat widget colors */
+:root {
+  --chat--color-primary: #3a5a40; /* Main green */
+  --chat--color-primary-shade-50: #324e37;
+  --chat--color-primary-shade-100: #2e4733;
+
+  --chat--color-secondary: #a3b18a; /* Soft green accent */
+  --chat--color-secondary-shade-50: #94a37e;
+
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: #ffffff;
+
+  --chat--header--background: var(--chat--color-primary);
+  --chat--header--color: #ffffff;
+
+  --chat--message--user--background: var(--chat--color-primary);
+  --chat--message--user--color: #ffffff;
+
+  --chat--message--bot--background: #edf1e1;
+  --chat--message--bot--color: #1e1e1e;
+}
+
+/* Cursor should be normal on full chat (only grab header) */
+#n8n-chat {
+  cursor: default;
+}
+
+/* Make ONLY the header draggable */
+#n8n-chat .chat-header {
+  cursor: grab;
+}
+
+#n8n-chat .chat-header:active {
+  cursor: grabbing;
+}
+
+#n8n-chat .chat-toggle-button {
+  background-color: var(--chat--color-primary) !important;
+  color: white !important;
+  cursor: grab;
+}
+
+#n8n-chat .chat-toggle-button:active {
+  cursor: grabbing;
+}
