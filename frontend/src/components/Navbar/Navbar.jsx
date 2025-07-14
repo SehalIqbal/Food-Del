@@ -36,7 +36,7 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-    <h1>BiteBazaar</h1>  
+    <h1>BhukkadBay</h1>  
 
       <ul className="navbar-menu">
         <Link to="/" onClick={() => setMenu("home")} className={`${menu === "home" ? "active" : ""}`}>home</Link>

@@ -1,12 +1,17 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 4%;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
 }
-.navbar .logo{
-    width: max(10%,80px);
-}
-.navbar .profile{
-    width: 40px;
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d32; /* A nice green tone */
 }

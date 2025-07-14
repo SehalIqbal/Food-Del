@@ -7,8 +7,8 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-         <h1>BiteBazaar</h1>
-          <p>Craving something delicious? BiteBazaar delivers your favorite meals hot and fresh, right to your door. Discover the flavors you love.</p>
+         <h1>BhukkadBay</h1>
+          <p>Craving something delicious? BhukkadBay delivers your favorite meals hot and fresh, right to your door. Discover the flavors you love.</p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="Facebook" />
             <img src={assets.twitter_icon} alt="Twitter" />
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        © 2024 BiteBazaar - All Rights Reserved.
+        © 2024 BhukkadBay - All Rights Reserved.
       </p>
     </div>
   );
