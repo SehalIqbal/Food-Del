@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 15px;
 }
 
 .explore-menu h1 {
